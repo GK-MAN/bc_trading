@@ -52,7 +52,7 @@ class Withdraw extends React.Component {
             value={amount}
             onChange={this.handleAmountChange}
         />
-        <button onClick={this.handleProposalSubmit}>Submit Proposal</button>
+        <button onClick={this.handleWithdrawSubmit}>Submit Withdraw</button>
       </div>
     );
   }
