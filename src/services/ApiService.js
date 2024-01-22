@@ -32,6 +32,20 @@ const ApiService = {
         return response.data;
     },
 
+    postDeposit: async (depositData) => {
+        //This call allows deposit into MT5 account from Binary account.
+        //https://api.deriv.com/api-explorer#mt5_deposit
+        const response = await axios.post(`${API_BASE_URL}/mt5_deposit`, depositData);
+        return response.data;
+    },
+
+    postWithdraw: async (withdrawData) => {
+        //This call allows withdrawal from MT5 account to Binary account.
+        //https://api.deriv.com/api-explorer#mt5_withdrawal
+        const response = await axios.post(`${API_BASE_URL}/mt5_withdrawal`, withdrawData);
+        return response.data;
+    },
+
 };
 
 export default ApiService;
