@@ -19,12 +19,8 @@ class Proposal extends React.Component {
   };
 
   handleProposalSubmit = async () => {
-    try {
       await ApiService.postProposal(proposeData);
       this.setState({ proposalSubmitted: true });
-    } catch (error) {
-      this.setState({ error });
-    }
   };
 
   render() {
