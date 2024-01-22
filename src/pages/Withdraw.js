@@ -45,7 +45,7 @@ class Withdraw extends React.Component {
     }
 
     return (
-      <div>
+      <div>//Please enter your Withdraw amount ...
         <input
             min={0}
             type="number"
