@@ -20,7 +20,7 @@ class Withdraw extends React.Component {
         to_binary: "CR100001",//This will be users details
         amount: this.state.amount,
     };
-    await ApiService.postProposal(updatedProposeData);
+    await ApiService.postWithdraw(updatedProposeData);
     this.setState({ proposalSubmitted: true });
   };
 
